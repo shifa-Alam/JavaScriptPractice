@@ -3,14 +3,13 @@ for (let index = 0; index < length; index++) {
 
     document.querySelectorAll(".myButton")[index].addEventListener("click", function () {
         var text = this.innerHTML;
-        console.log(text);
-       audioPlay(text);
+        audioPlay(text);
 
     });
 
 }
 
-function audioPlay(text){
+function audioPlay(text) {
     switch (text.trim()) {
         case "A":
             var audio = new Audio('sounds/apple.mp3');
